@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightseagreen;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.wrapper img {
+  object-fit: cover;
+}
+
+.title,
+p {
+  margin: 6px;
+  padding: 12px;
+}
