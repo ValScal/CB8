@@ -1,0 +1,337 @@
+/* ******** ******* */
+/* **** COLORS **** */
+/* *** #f2cc8f **** */
+/* *** #81b29a *** */
+/* *** #3d405b **** */
+/* ******** ******* */
+
+/* Global */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 18px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+
+.button-primary {
+  color: #fff;
+  background-color: #3d405b;
+  border: 1px solid #3d405b;
+}
+
+.button-primary:hover {
+  color: #3d405b;
+  background-color: #81b29a;
+}
+
+.button-secondary {
+  color: #fff;
+  background-color: #81b29a;
+}
+
+.button-secondary:hover {
+  color: #81b29a;
+  background-color: #3d405b;
+}
+
+/* end Global */
+
+/* Typo */
+h1 {
+  font-size: 46px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 38px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.display {
+  font-size: 56px;
+}
+
+/* end Typo */
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+/* end Reset*/
+
+/* Header */
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #81b29a;
+  z-index: 2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header-wrapper {
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav ul,
+.footer-nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.main-nav a {
+  color: #352525;
+}
+
+/* end Header */
+
+/* Hero*/
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: #81b29a;
+}
+
+.hero-wrapper {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  height: 100vh;
+  opacity: 0.5;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  color: #3d405b;
+  z-index: 1;
+}
+
+.hero-wrapper a,
+.firstRow-wrapper a {
+  margin-top: 30px;
+}
+
+/* end Hero */
+
+/* firstRow */
+
+.firstRow,
+.secondRow {
+  width: 100%;
+}
+
+.firstRow-wrapper,
+.secondRow-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column;
+  width: 100%;
+}
+
+.firstRow-text,
+.secondRow-text,
+.secondRow-cta {
+  width: 100%;
+  padding: 20px;
+}
+
+.firstRow-image {
+  width: 100%;
+}
+
+.firstRow-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* end firstRow */
+
+/* secondRow */
+
+.secondRow {
+  background-color: #f2cc8f;
+}
+
+.secondRow-cta {
+  text-align: center;
+  margin: 60px auto;
+}
+
+.secondRow-text {
+  display: none;
+}
+
+.secondRow-text p {
+  font-size: 18px;
+  word-spacing: 4px;
+  letter-spacing: 5px;
+}
+
+.secondRow-wrapper a {
+  margin-top: 20px;
+}
+/* end secondRow */
+
+.card {
+  background-color: #81b29a;
+  padding: 20px;
+}
+
+.card .container {
+  display: block;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  margin: 10px auto;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+  transition: all 0.35s;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-text {
+  width: 100%;
+  padding: 20px;
+}
+
+.card-text a {
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: #3d405b;
+}
+
+.footer-nav ul {
+  justify-content: center;
+}
+
+.footer-nav {
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-nav a {
+  text-align: center;
+  color: #f2cc8f;
+}
+
+/* media queries for tablet and desktop */
+@media screen and (min-width: 768px) {
+  .firstRow-wrapper,
+  .secondRow-wrapper {
+    flex-flow: row;
+  }
+  .secondRow-wrapper {
+    min-height: 600px;
+  }
+  .firstRow-image,
+  .firstRow-text,
+  .secondRow-text,
+  .secondRow-cta {
+    width: 50%;
+  }
+  .secondRow-cta {
+    text-align: left;
+  }
+  .secondRow-text {
+    display: block;
+  }
+
+  .card .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+  }
+}
+
+/* media quaries mobile fix */
+
+@media screen and (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+  .header-wrapper {
+    justify-content: center;
+  }
+}
