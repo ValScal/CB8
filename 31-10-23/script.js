@@ -1,4 +1,4 @@
-// start
+// start 
 console.log("-- Primo metodo --");
 
 // definisco un array
