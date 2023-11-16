@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
+
+/* ******** ******* ******* */
+/* ******** COLORS ******** */
+/* Page BG: #fdfdf8 ******* */
+/* Elements BG: #fcfbec *** */
+/* Add Btn: #feefd9 ******* */
+/* Wishlist Btn: #fed7a3 ** */
+/* Dark Elements: #0d0d0d * */
+/* ******** ******* ******* */ 
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+img {
+    display: block;
+  }
+  
+a {
+    text-decoration: none;
+  }
+/* end Reset*/
+
+/* Typo */
+h1 {
+    font-size: 36px;
+  }
+
+h2 {
+    font-size: 32px;
+  }
+  
+h3 {
+    font-size: 28px;
+  }
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+  }
+/* end Typo */
+
+/* Global */
+body {
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  padding: 10px;
+  color: #0d0d0d;
+  background-color: #fdfdf8;
+  border:1px solid #e2e2e2; /* solo per vedere il contenitore dato che lo sfondo è molto chiaro */
+}
+
+/* end Global */
+
+.main-nav,
+.categories-wrapper {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px
+}
+
+.nav-title h1 {
+  line-height: 36px;
+}
+
+.nav-icons button,
+.categories button {
+  background-color: #fcfbec;
+  border:none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight:700;
+}
+
+.categories button:first-child {
+  background-color: #0d0d0d;
+  color: #fcfbec;
+}
+
+.nav-icons button {
+  padding: 16px;
+}
+
+.categories,
+.recommended {
+  margin-top:10px;
+}
+
+.categories button {
+  padding: 12px;
+  flex: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories button span {
+  margin-top:10px;
+}
+
+.recommended h3 {
+  margin: 20px 0 10px 0;
+
+}
+
+.robo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.robo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 160px;
+  background-color: #f9f5ea;
+  border-radius: 12px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+}
+
+.robo img {
+  object-fit: cover;
+}
+
+.robo .text {
+  padding: 0 10px;
+  line-height: 22px;
+  margin: 6px 0;
+}
+
+.robo .text p {
+font-weight:800;
+}
+
+.robo .text h4 {
+  font-weight:400;
+}
