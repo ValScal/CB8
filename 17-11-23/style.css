@@ -1,0 +1,100 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
+body {
+  margin: 0;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 10px 10px;
+  box-sizing: border-box;
+  font-family: "Handlee", cursive;
+  color: #111129;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.hidden-content {
+  display: none;
+}
+
+.wrapper img {
+  border-radius: 20px;
+  float: left;
+  margin-right: 20px;
+}
+
+.wrapper p {
+  font-size: 18px;
+}
+
+.popup-wrapper {
+  width: 320px;
+  height: 180px;
+  position: fixed;
+  top: 25%;
+  left: calc(50% - 160px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  background: #9f9fc5;
+}
+
+.popup-text {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #111129;
+}
+
+.btn {
+  width: 100px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #111129;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  font-family: "Handlee", cursive;
+  font-size: 1.1rem;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #737397;
+  color: #fff;
+}
+
+/* EXTRA */
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: calc(50% - 24px);
+  box-sizing: border-box;
+  animation: animloader 1s linear infinite;
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: -72px 0 #111129 inset;
+  }
+  100% {
+    box-shadow: 48px 0 #111129 inset;
+  }
+}
