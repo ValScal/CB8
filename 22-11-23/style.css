@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
+
+/* ******** ******* ******* */
+/* ******** COLORS ******** */
+/* Page BG: #fdfdf8 ******* */
+/* Elements BG: #fcfbec *** */
+/* Add Btn: #feefd9 ******* */
+/* Wishlist Btn: #fed7a3 ** */
+/* Dark Elements: #0d0d0d * */
+/* ******** ******* ******* */ 
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+img {
+    display: block;
+  }
+  
+a {
+    text-decoration: none;
+  }
+/* end Reset*/
+
+/* Typo */
+h1 {
+    font-size: 36px;
+  }
+
+h2 {
+    font-size: 32px;
+  }
+  
+h3 {
+    font-size: 28px;
+  }
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+  }
+/* end Typo */
+
+body {
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  padding: 10px;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex:25%;
+  gap:10px;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+.image-container, 
+.image-element {
+  max-width:400px;
+  height:auto;
+  border-radius: 6px 6px  0 0;
+  background-color:#fff;
+}
+
+.image-container {
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);  
+}
+
+.id-text-element,
+.author-text-element {
+  display:inline-block;
+  padding:6px 3px;
+}
+
