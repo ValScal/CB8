@@ -89,8 +89,8 @@ select {
 }
 
 #main-temp p {
-  font-size: 5rem;
-  margin-top: -30px;
+  font-size: 4.6rem;
+  margin-top: -10px;
   margin-bottom:0;
 }
 
@@ -111,7 +111,7 @@ select {
 #weather-icon {
   width: 200px;
   height: 160px;
-  margin: 0 auto 10px;
+  margin: -10px auto 10px;
   margin-bottom: 0;
   object-fit: cover;
   display: none;
@@ -127,16 +127,16 @@ select {
 
 .forecast-item {
   flex: 0 0 auto;
-  width: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 10px;
+  padding: 10px;
   color: white;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
-  margin-bottom:6px;
-  cursor:pointer;
+  margin-bottom: 6px;
+  cursor: pointer;
 }
 
 .forecast-item img {
@@ -145,9 +145,9 @@ select {
 }
 
 .forecast-item .f-hour,
-.forecast-item .f-temp
+.forecast-item .f-temp-hum
  {
-  margin-bottom:0;
+  margin: 0;
 }
 
 #weather-heading {
