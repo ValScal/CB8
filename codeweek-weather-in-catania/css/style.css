@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Afacad:wght@400;700&display=swap");
 
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bebebe;
+}
+
 body {
   background: rgb(124, 181, 211);
   background: radial-gradient(
@@ -72,6 +91,7 @@ select {
 #main-temp p {
   font-size: 5rem;
   margin-top: -30px;
+  margin-bottom:0;
 }
 
 #weather-info p {
@@ -102,9 +122,10 @@ select {
   white-space: nowrap;
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
-.hourly-item {
+.forecast-item {
   flex: 0 0 auto;
   width: 80px;
   display: flex;
@@ -112,12 +133,21 @@ select {
   align-items: center;
   margin-right: 10px;
   color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  margin-bottom:6px;
+  cursor:pointer;
 }
 
-.hourly-item img {
+.forecast-item img {
   width: 30px;
   height: 30px;
-  margin-bottom: 5px;
+}
+
+.forecast-item .f-hour,
+.forecast-item .f-temp
+ {
+  margin-bottom:0;
 }
 
 #weather-heading {
