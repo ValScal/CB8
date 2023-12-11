@@ -96,6 +96,8 @@ municipCataniaArr.forEach((city) => {
 
 selectEl.addEventListener("change", (e) => {
   let city = e.target.value;
+  
+  displayHourlyForecast(city);
   fetch(`${BASE_URL}?q=${e.target.value}&appid=${APY_KEY}`)
     .then((res) => res.json())
     .then((data) => {
@@ -201,60 +203,42 @@ function changeBackground(weatherCondition) {
   }
 }
 
-// function displayHourlyForecast(hourlyData) {
-//   const hourlyForecastDiv = document.getElementById("hourly-forecast");
-
-//   const next24Hours = hourlyData.slice(0, 8); // Display the next 24 hours (3-hour intervals)
-
-//   next24Hours.forEach((item) => {
-//     const dateTime = new Date(item.dt * 1000); // Convert timestamp to milliseconds
-//     const hour = dateTime.getHours();
-//     const temperature = Math.round(item.main.temp - 273.15); // Convert to Celsius
-//     const iconCode = item.weather[0].icon;
-//     const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
-
-//     const hourlyItemHtml = `
-//           <div class="hourly-item">
-//               <span>${hour}:00</span>
-//               <img src="${iconUrl}" alt="Hourly Weather Icon">
-//               <span>${temperature}°C</span>
-//           </div>
-//       `;
-
-//     hourlyForecastDiv.innerHTML += hourlyItemHtml;
-//   });
-// }
-
 function displayHourlyForecast(e) {
-  const cityName = e.target.value;
+  // const cityName = e.target.value;
 
-  fetch(`${BASE_URL_FORECAST}?q=${e.target.value}&appid=${APY_KEY}`)
+  fetch(`${BASE_URL_FORECAST}?q=${e}&appid=${APY_KEY}`)
     .then((res) => res.json())
     .then((data) => {
       const hourlyForecastDiv = document.getElementById("hourly-forecast");
-      hourlyForecastDiv.innerHTML = ""; // Pulisci il contenuto prima di aggiungere nuovi elementi
+      hourlyForecastDiv.innerHTML = ""; 
 
-      // Itera attraverso le previsioni orarie
-      data.list.forEach((forecast) => {
-        const hour = new Date(forecast.dt * 1000).getHours(); // Estrai l'ora dal timestamp
-        const temperature = Math.round(forecast.main.temp - 273.15);
-        const iconCode = forecast.weather[0].icon;
+      const hourlyForecasts = data.list.slice(0, 8);
+
+      hourlyForecasts.forEach((hourlyForecasts) => {
+        const hour = new Date(hourlyForecasts.dt * 1000).getHours(); 
+        const temperature = Math.round(hourlyForecasts.main.temp - 273.15);
+        const humidity = hourlyForecasts.main.humidity;
+        const iconCode = hourlyForecasts.weather[0].icon;
         const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
 
         const forecastHTML = `
           <div class="forecast-item">
-            <span>${hour}:00</span>
+            <p class="f-hour"><i class="fa-solid fa-clock"></i> ${hour}:00</p>
             <img src="${iconUrl}" alt="Hourly Weather Icon">
-            <span>${temperature}°C</span>
+            <p class="f-temp"><i class="fa-solid fa-temperature-half"></i> ${temperature}°C</p>
+            <p class="f-hum"><i class="fa-solid fa-droplet"></i> ${humidity}%</p>
+
           </div>`;
 
         hourlyForecastDiv.innerHTML += forecastHTML;
       });
 
-      // Non è necessario restituire alcun valore qui
     })
     .catch((error) => console.error("Errore nella richiesta API:", error));
 }
+
+
+
 
 function showImage() {
   // iconImgEl
