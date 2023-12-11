@@ -225,9 +225,9 @@ function displayHourlyForecast(e) {
           <div class="forecast-item">
             <p class="f-hour"><i class="fa-solid fa-clock"></i> ${hour}:00</p>
             <img src="${iconUrl}" alt="Hourly Weather Icon">
-            <p class="f-temp"><i class="fa-solid fa-temperature-half"></i> ${temperature}°C</p>
-            <p class="f-hum"><i class="fa-solid fa-droplet"></i> ${humidity}%</p>
-
+            <p class="f-temp-hum">
+              <span class="f-temp"><i class="fa-solid fa-temperature-half"></i> ${temperature}°C/span>
+              <span class="f-hum"><i class="fa-solid fa-droplet"></i> ${humidity}%</span></p>
           </div>`;
 
         hourlyForecastDiv.innerHTML += forecastHTML;
