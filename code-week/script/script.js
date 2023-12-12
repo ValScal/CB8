@@ -2,7 +2,7 @@
 
 const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 const BASE_URL_FORECAST = "https://api.openweathermap.org/data/2.5/forecast";
-const APY_KEY = "8fdc8599e79e8877d065ee711248d62d";
+const API_KEY = "8fdc8599e79e8877d065ee711248d62d";
 
 // START SELECT
 const municipCataniaArr = [
@@ -98,7 +98,7 @@ selectEl.addEventListener("change", (e) => {
   let city = e.target.value;
   
   displayHourlyForecast(city);
-  fetch(`${BASE_URL}?q=${e.target.value}&appid=${APY_KEY}`)
+  fetch(`${BASE_URL}?q=${e.target.value}&appid=${API_KEY}`)
     .then((res) => res.json())
     .then((data) => {
       showWeatherInfoSel(data);
@@ -206,7 +206,7 @@ function changeBackground(weatherCondition) {
 function displayHourlyForecast(e) {
   // const cityName = e.target.value;
 
-  fetch(`${BASE_URL_FORECAST}?q=${e}&appid=${APY_KEY}`)
+  fetch(`${BASE_URL_FORECAST}?q=${e}&appid=${API_KEY}`)
     .then((res) => res.json())
     .then((data) => {
       const hourlyForecastDiv = document.getElementById("hourly-forecast");
@@ -236,9 +236,6 @@ function displayHourlyForecast(e) {
     })
     .catch((error) => console.error("Errore nella richiesta API:", error));
 }
-
-
-
 
 function showImage() {
   // iconImgEl
