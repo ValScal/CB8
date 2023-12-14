@@ -1,0 +1,30 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-wrap:wrap;
+  }
+  
+  .gallery h2 {
+    padding: 0 24px;
+  }
+
+  .imgs__wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .imgs__wrapper img {
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .imgs__wrapper img:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  }
+ 

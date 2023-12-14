@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    background-color: #ececec;
+    margin-top:20px;
+  }
+  
+  .company__logo__wrapper,
+  .footer__link  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+  
+  .company__logo__wrapper img {
+    height: 50px;
+  }
+  
+  .company__logo__wrapper h4,
+  .company__logo__wrapper p {
+    margin: 0;
+    text-align: center;
+  }
+/*   
+  .footer__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+   */

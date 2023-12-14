@@ -1,0 +1,21 @@
+.CardList {
+  display: flex;
+  flex-direction: column;
+}
+
+.CardList h2 {
+  padding: 0 24px;
+}
+
+.CardList__items {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap:wrap;  
+  width: 100%;
+  overflow-x:scroll;
+  background-color: #ececec;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
