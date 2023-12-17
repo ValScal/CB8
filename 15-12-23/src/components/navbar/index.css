@@ -1,0 +1,19 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: #ececec;
+}
+
+.Navbar__list {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.Navbar__list li {
+  cursor: pointer;
+  transition: color 0.35s;
+}
+
+

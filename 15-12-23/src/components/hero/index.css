@@ -1,0 +1,10 @@
+.Hero__wrapper {
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Hero__img img {
+  border-radius: 6px;
+}

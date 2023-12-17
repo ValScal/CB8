@@ -1,0 +1,36 @@
+.CardList {
+  display: flex;
+  flex-direction: column;
+}
+
+.CardList h2 {
+  padding: 0 24px;
+}
+
+.CardList__items {
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  overflow-x:scroll;
+  background-color: #ececec;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  scroll-behavior: smooth;
+}
+
+/* Add Scrollbar Style */
+
+.CardList__items::-webkit-scrollbar {
+  height: 12px;               /* height / width (horizontal / vertical scroll) of the entire scrollbar */
+}
+
+.CardList__items::-webkit-scrollbar-track {
+  background: #ececec;        /* color of the tracking area */
+}
+
+.CardList__items::-webkit-scrollbar-thumb {
+  background-color: #41225f;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #ececec;  /* creates padding around scroll thumb */
+}

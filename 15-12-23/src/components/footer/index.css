@@ -1,0 +1,43 @@
+.Footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding:6px 0;
+  background-color: #181818;
+  color: white;
+}
+
+.Footer__list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin:0;
+  list-style-type: none;
+}
+
+.Footer__list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.Footer__list li:hover {
+  background: rgba(255, 255, 255, 0.3)
+}
+
+.Footer__list li p {
+  margin-bottom:0;
+  margin-top:6px;
+}
+
+.Footer__list li img {
+  padding: 4px;
+  width: 20px;
+  height: 20px;
+}
