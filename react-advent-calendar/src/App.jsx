@@ -23,9 +23,12 @@ function App() {
   };
 
   // When we open a door, this data is saved in local storage to remember which one has been already opened
-  const openDoor = (doorDate) => {
-    setSubmitToStorage([...isOpen, doorDate]);
-    localStorage.setItem('isOpen', submitToStorage);
+    const openDoor = (doorDate) => {
+    setSubmitToStorage(prevState => {
+      const updatedState = [...prevState, doorDate];
+      localStorage.setItem('isOpen', JSON.stringify(updatedState));
+      return updatedState;
+    });
   };
 
   // We need to convert the date format from string to date to compare it to today's date 
