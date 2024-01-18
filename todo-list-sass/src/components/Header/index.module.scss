@@ -1,0 +1,33 @@
+@import "../../assets/css/mixins.module.scss";
+@import "../../assets/css/variables.module.scss";
+
+.LogoContainer {
+    text-align: center;
+    padding: 10px;
+
+        img {
+            width: 100%;
+            max-width: 300px;
+        }           
+}
+
+.todoForm {
+    @include flex-container(row, center, center, 0);
+    width: 100%;
+   
+
+
+    input {
+        width: 100%;
+    }
+
+    input, button {
+        height: 40px;
+        border: none;
+        margin-bottom: 20px;
+        font-size: 1rem;
+        font-family: $myFont;
+    }
+
+    
+}

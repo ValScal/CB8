@@ -1,0 +1,45 @@
+@import "../../assets/css/mixins.module.scss";
+@import "../../assets/css/variables.module.scss";
+
+.TodoItem {
+    @include flex-container(row, center, flex-start, 1rem);
+    box-shadow: $myBoxShadow;
+    color: $text-light;
+    border-radius: 16px;
+    background: $primary-color;
+    margin-bottom: 20px;
+    padding: 20px 20px 20px 70px; 
+    cursor: pointer;
+    position: relative;
+    transition: background 0.7s ease-in;
+
+    &:hover {
+        background: $secondary-color;
+    }
+
+    .Strike {
+        text-decoration: line-through;
+    }
+
+
+    .userId {
+        position: absolute;
+        top: 0;
+        left: 14px;
+        background-color: rgba(255,255,255,0.4);
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        padding: 3px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .checkbox {
+        margin: 16px 0;
+        position: absolute;
+        top: 48px;
+        left: 18px;
+       
+    }
+}

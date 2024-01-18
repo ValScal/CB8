@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import "./assets/css/mixins.module.scss"; 
+@import "./assets/css/variables.module.scss";
+
+body {
+    font-family: $myFont;
+    @include reset(0 auto, 0);
+    background-color: #86aee1;
+}
+
+.App {
+    @include flex-container(column, center, center, 1rem);
+    width:100%;
+    max-width:480px;
+    margin: 0 auto;
+    height: 100vh;
+
+    .TodoList {
+        padding: 20px;
+        height: 100%;
+        overflow-y: scroll;
+        box-shadow: 0 0 14px #969696;
+        background-color: #d0edff;
+        box-sizing: content-box;
+    }
+
+    @media screen and (min-width:576px) {
+        .TodoList {
+            height: 90%;
+        }
+    }
+}
