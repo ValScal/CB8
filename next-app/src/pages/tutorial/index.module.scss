@@ -1,0 +1,34 @@
+.guide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  line-height: 30px;
+}
+
+.spanPokedex {
+  text-decoration: underline;
+}
+
+.inputPokemon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  outline: none;
+}
+
+.arrowInputCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 100px;
+  margin: 50px 0 50px 0;
+}
