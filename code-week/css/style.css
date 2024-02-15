@@ -94,8 +94,9 @@ select {
 
 #main-temp p {
   font-size: 4.6rem;
+  line-height: 5rem;
   margin-top: -10px;
-  margin-bottom:0;
+  margin-bottom: 0;
 }
 
 #weather-info p {
@@ -126,7 +127,7 @@ select {
   white-space: nowrap;
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .forecast-item {
@@ -135,11 +136,11 @@ select {
   flex-direction: column;
   align-items: center;
   margin-right: 10px;
+  margin-bottom: 12px;
   padding: 10px;
   color: white;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
-  margin-bottom: 16px;
   cursor: pointer;
 }
 
