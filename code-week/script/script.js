@@ -6,6 +6,7 @@ const API_KEY = "8fdc8599e79e8877d065ee711248d62d";
 
 // START SELECT
 const municipCataniaArr = [
+  { name: "Choose a location", value: "choose+location" },
   { name: "Aci Bonaccorsi", value: "aci+bonaccorsi" },
   { name: "Aci Castello", value: "aci+castello" },
   { name: "Aci Catena", value: "aci+catena" },
