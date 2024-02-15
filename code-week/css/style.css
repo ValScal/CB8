@@ -78,8 +78,8 @@ p {
   font-size: 1rem;
 }
 
-.select-container {
-  margin-top: 20px;
+#select-container {
+  margin-top: 16px;
 }
 
 select {
