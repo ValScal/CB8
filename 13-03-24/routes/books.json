@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "titolo": "Il signore degli anelli",
+    "autore": "J.R.R. Tolkien"
+  },
+  {
+    "id": 2,
+    "titolo": "1984",
+    "autore": "George Orwell"
+  },
+  {
+    "id": 3,
+    "titolo": "Cronache del ghiaccio e del fuoco",
+    "autore": "George R.R. Martin"
+  },
+  {
+    "id": 4,
+    "titolo": "Il piccolo principe",
+    "autore": "Antoine de Saint-Exupéry"
+  },
+  {
+    "id": 5,
+    "titolo": "Harry Potter e la pietra filosofale",
+    "autore": "J.K. Rowling"
+  },
+  {
+    "id": 6,
+    "titolo": "Moby Dick",
+    "autore": "Herman Melville"
+  },
+  {
+    "id": 7,
+    "titolo": "Orgoglio e pregiudizio",
+    "autore": "Jane Austen"
+  },
+  {
+    "id": 8,
+    "titolo": "Guerra e pace",
+    "autore": "Lev Tolstoj"
+  },
+  {
+    "id": 9,
+    "titolo": "Il nome della rosa",
+    "autore": "Umberto Eco"
+  },
+  {
+    "id": 10,
+    "titolo": "La metamorfosi",
+    "autore": "Franz Kafka"
+  },
+  {
+    "id": 11,
+    "titolo": "Don Chisciotte",
+    "autore": "Miguel de Cervantes"
+  },
+  {
+    "id": 12,
+    "titolo": "Anna Karenina",
+    "autore": "Lev Tolstoj"
+  },
+  {
+    "id": 13,
+    "titolo": "Il giovane Holden",
+    "autore": "J.D. Salinger"
+  },
+  {
+    "id": 14,
+    "titolo": "Cime tempestose",
+    "autore": "Emily Brontë"
+  },
+  {
+    "id": 15,
+    "titolo": "Il vecchio e il mare",
+    "autore": "Ernest Hemingway"
+  },
+  {
+    "id": 16,
+    "titolo": "La fattoria degli animali",
+    "autore": "George Orwell"
+  },
+  {
+    "id": 17,
+    "titolo": "Lo hobbit",
+    "autore": "J.R.R. Tolkien"
+  },
+  {
+    "id": 18,
+    "titolo": "Città di ossa",
+    "autore": "Cassandra Clare"
+  },
+  {
+    "id": 19,
+    "titolo": "Il ladro di fulmini",
+    "autore": "Rick Riordan"
+  },
+  {
+    "id": 20,
+    "titolo": "Il codice da Vinci",
+    "autore": "Dan Brown"
+  }
+]
